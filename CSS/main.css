@@ -326,3 +326,82 @@ nav ul li a:hover{
     }
 }
 /* End Skills Section */
+
+/* Start Projects Section */
+.Projects{
+    padding: 40px 0;
+}
+
+.Projects .container{
+    grid-template-columns: repeat(3,auto);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.Projects .container .project-card{
+    position: relative;
+    background-color: #FF407D;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.493);
+}
+
+.Projects .container .project-card .project-hover{
+    position: absolute;
+    height: 100%;
+    top: -100%;
+    background-color: #10203ce1;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    color: var(--main-color);
+    transition: all 0.8s ease-in-out;
+}
+
+.Projects .container .project-card:hover{
+    outline: 3px solid var(--sec-bg-color);
+}
+.Projects .container .project-card:hover .project-hover{
+    top:0;
+}
+
+.Projects .container .project-card .project-hover h5{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.Projects .container .project-card .project-hover p{
+    padding: 15px 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.Projects .container .project-one{
+    background-image: url('../Images/project\ 1.PNG');
+    background-size: cover;
+}
+.Projects .container .project-two{
+    background-image: url('../Images/project\ 2.PNG');
+    background-size: cover;
+}
+.Projects .container .project-three{
+    background-image: url('../Images/project\ 3.PNG');
+    background-size: cover;
+}
+
+@media (min-width:600px) and (max-width:990px){
+    .Projects .container{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media (max-width:599px){
+    .Projects .container{
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+}
+/* End Projects Section */
