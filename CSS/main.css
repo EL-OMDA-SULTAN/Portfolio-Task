@@ -376,7 +376,7 @@ nav ul li a:hover{
 .Projects .container .project-card .project-hover{
     position: absolute;
     height: 100%;
-    top: -100%;
+    top: 0;
     background-color: #10203ce1;
     width: 100%;
     text-align: center;
@@ -387,9 +387,6 @@ nav ul li a:hover{
 
 .Projects .container .project-card:hover{
     outline: 3px solid var(--sec-bg-color);
-}
-.Projects .container .project-card:hover .project-hover{
-    top:0;
 }
 
 .Projects .container .project-card .project-hover h5{
