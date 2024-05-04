@@ -118,6 +118,7 @@ nav ul li a:hover{
 
 /* Start To Top Style */
 .top a{
+    z-index: 999;
     position: fixed;
     padding: 10px 15px;
     background-color: white;
@@ -354,6 +355,7 @@ nav ul li a:hover{
 /* Start Projects Section */
 .Projects{
     padding: 40px 0;
+    z-index: 99;
 }
 
 .Projects .container{
